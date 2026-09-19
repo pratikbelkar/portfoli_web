@@ -1,307 +1,201 @@
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pratik Belkar Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link href="output.css" rel="stylesheet">
-  <link rel="icon"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='85'%3E❤️‍🔥%3C/text%3E%3C/svg%3E">
-
-  <style>
-    .font-heading {
-      font-family: "Poppins", sans-serif;
-    }
-
-    .font-inter {
-      font-family: "Inter", sans-serif;
-    }
-
-    .mouse-follower {
-      transform: translate(-50%, -50%);
-    }
-  </style>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d16">
+  <meta name="description" content="Pratik Belkar is a Flutter, MERN and AI developer in Pune. Explore his mobile apps, Python and database skills, work experience and projects.">
+  <link rel="canonical" href="https://pratikbelkar.github.io/portfoli_web/">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="Pratik Belkar Portfolio">
+  <meta property="og:url" content="https://pratikbelkar.github.io/portfoli_web/">
+  <meta property="og:title" content="Pratik Belkar | Flutter, MERN & AI Developer in Pune">
+  <meta property="og:description" content="Flutter apps, MERN web development, Python, databases and practical AI. See Pratik’s experience and projects.">
+  <meta property="og:image" content="https://pratikbelkar.github.io/portfoli_web/assets/social-preview.png">
+  <meta property="og:image:alt" content="Pratik Belkar, Flutter developer in Pune">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pratik Belkar | Flutter, MERN & AI Developer in Pune">
+  <meta name="twitter:description" content="Flutter apps, MERN web development, Python and practical AI.">
+  <meta name="twitter:image" content="https://pratikbelkar.github.io/portfoli_web/assets/social-preview.png">
+  <title>Pratik Belkar | Flutter, MERN & AI Developer in Pune</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pratik Belkar",
+    "url": "https://pratikbelkar.github.io/portfoli_web/",
+    "jobTitle": "Flutter Developer and AI Specialist",
+    "description": "Flutter, MERN and AI developer in Pune working across mobile apps, web development, Python and databases.",
+    "email": "mailto:belkarpratik2002@gmail.com",
+    "sameAs": [
+      "https://github.com/pratikbelkar",
+      "https://www.linkedin.com/in/pratik-belkar/"
+    ],
+    "homeLocation": {"@type": "Place", "name": "Pune, India"},
+    "knowsAbout": ["Flutter", "Dart", "Riverpod", "MERN stack", "React", "Node.js", "Express", "MongoDB", "PostgreSQL", "Firebase", "Python", "AI development", "Cursor", "Codex", "Claude"]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23090d16'/%3E%3Ctext x='32' y='43' fill='%23c9ff75' font-size='31' font-family='Arial' font-weight='bold' text-anchor='middle'%3EPB%3C/text%3E%3C/svg%3E">
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("portfolio-theme") || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"); } catch (_) { document.documentElement.dataset.theme = "dark"; }</script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-glow" aria-hidden="true"></div>
 
-<body
-  class="  bg-[rgb(25,25,28)] bg-[linear-gradient(rgb(55,49,74)_1px,transparent_1px),linear-gradient(90deg,rgb(55,49,74)_1px,transparent_1px)] bg-[size:50px_50px] bg-fixed z-0">
-  <img src="assets/amoung-us.gif"
-    class="mouse-follower fixed top-[-42px] left-0 w-[90px] h-auto pointer-events-none z-[-1]" alt="cursor follower">
+  <header class="site-header" id="top">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Pratik Belkar, back to top"><span class="brand-mark">P<span>.</span></span><span class="brand-name">PRATIK<br>BELKAR</span></a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#expertise">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false" title="Switch to light mode"><span class="theme-icon" aria-hidden="true">☀</span><span class="theme-label">Light mode</span></button>
+        <a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
 
-  <h1 class="text-white  text-[1.3rem] font-heading tracking-tight pt-4 ml-16 font-bold text-2xl">
-    Pratik Belkar
-  </h1>
-  <section class="flex text-wrap  relative md:flex-row justify-center z-[900]">
-    <div class="mt-6 flex-col  md:flex-row flex justify-center items-center w-full h-auto">
-
-      <div class="text-white text-[1.3rem] font-heading flex-col ml-0 sm:ml-12 leading-[6rem]">
-        <p
-          class="text-sm md:text-md sm:mt-0 mt-5  lg:text-xl text-font-2nd font-bold text-center md:text-start text-animate">
-          I'm Pratik Belkar, and I enjoy
-        </p>
-        <h1
-          class="font-bold mt-4 sm:mt-4 sm:text-6xl left-16 top-[18%] text-lg md:text-5xl lg:text-6xl 2xl:text-7xl text-center md:text-start text-animate">
-          Building pixel-<br class="hidden lg:block" />perfect
-          <span
-            class="text-2xl sm:text-6xl font-bold bg-gradient-to-r from-purple-500 via-purple-300 to-purple-100 bg-clip-text text-transparent leading-0 sm:leading-[3rem]">Interactive</span><br
-            class="hidden lg:block" />
-          mobile-apps &Websites For Businesses❤️‍🔥
-        </h1>
-        <div class="mt-12 flex items-center justify-center md:justify-start font-bold text-2xl text-animate">Fullstack
-          Flutter
-          Developer
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> FLUTTER DEVELOPER <span class="eyebrow-line"></span> PUNE, INDIA</div>
+        <h1 id="hero-title">I build apps <em>people enjoy</em><span class="title-dot">.</span></h1>
+        <p class="hero-lead">I'm <strong>Pratik Belkar</strong>. I build <span>Flutter apps for Android and iOS</span>, connect them to the services they need, and care about every tap along the way.</p>
+        <p class="hero-sub">I also build MERN web apps, work with Python and databases, and use AI tools to take ideas from rough sketch to working prototype.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">See my projects <span aria-hidden="true">↗</span></a>
+          <a class="button button-ghost" href="assets/resume/pratik_flutter_resume.pdf" download>Download my résumé <span aria-hidden="true">↓</span></a>
         </div>
-        <div
-          class="mt-1 flex items-center justify-center  md:justify-start font-bold text-2xl bg-gradient-to-r from-purple-500 via-purple-300 to-purple-100 bg-clip-text text-transparent leading-[2rem] text-animate">
-          Flutter + Nodejs
-
-        </div>
-        <div class="flex mt-14 gap-3  justify-center md:justify-start">
-          <a href="https://www.linkedin.com/in/pratik-belkar/" target="_blank">
-            <svg class="fill-current hover:text-[rgb(68,185,248)] text-[rgb(187,229,252)] h-10 w-10 rounded-lg"
-              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-              <path
-                d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z" />
-            </svg>
-          </a>
-          <a href="https://github.com/pratikbelkar" target="_blank">
-            <svg class="fill-current h-10 w-10 rounded-lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-              <path
-                d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z" />
-            </svg>
-          </a>
-
-          <a href="mailto:belkarpratik2002@gmail.com" target="_blank">
-
-            <svg class="fill-current hover:text-[rgb(247,149,44)] text-[rgb(252,187,116)] h-10 w-10 rounded-lg"
-              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-              <path
-                d="M125.4 128C91.5 128 64 155.5 64 189.4C64 190.3 64 191.1 64.1 192L64 192L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 192L575.9 192C575.9 191.1 576 190.3 576 189.4C576 155.5 548.5 128 514.6 128L125.4 128zM528 256.3L528 448C528 456.8 520.8 464 512 464L128 464C119.2 464 112 456.8 112 448L112 256.3L266.8 373.7C298.2 397.6 341.7 397.6 373.2 373.7L528 256.3zM112 189.4C112 182 118 176 125.4 176L514.6 176C522 176 528 182 528 189.4C528 193.6 526 197.6 522.7 200.1L344.2 335.5C329.9 346.3 310.1 346.3 295.8 335.5L117.3 200.1C114 197.6 112 193.6 112 189.4z" />
-            </svg>
-          </a>
-          <a href="assets/resume/pratik_flutter_resume.pdf" download>
-            <svg class="fill-current hover:text-[rgb(239,97,114)] text-[rgb(252,164,174)] h-10 w-10 rounded-lg"
-              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-              <path
-                d="M192 112L304 112L304 200C304 239.8 336.2 272 376 272L464 272L464 512C464 520.8 456.8 528 448 528L192 528C183.2 528 176 520.8 176 512L176 128C176 119.2 183.2 112 192 112zM352 131.9L444.1 224L376 224C362.7 224 352 213.3 352 200L352 131.9zM192 64C156.7 64 128 92.7 128 128L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 250.5C512 233.5 505.3 217.2 493.3 205.2L370.7 82.7C358.7 70.7 342.5 64 325.5 64L192 64zM248 320C234.7 320 224 330.7 224 344C224 357.3 234.7 368 248 368L392 368C405.3 368 416 357.3 416 344C416 330.7 405.3 320 392 320L248 320zM248 416C234.7 416 224 426.7 224 440C224 453.3 234.7 464 248 464L392 464C405.3 464 416 453.3 416 440C416 426.7 405.3 416 392 416L248 416z" />
-            </svg>
-          </a>
+        <div class="hero-proof"><span class="proof-line"></span><span>1.5 YEARS WITH FLUTTER</span><i>✦</i><span>ANDROID + IOS</span></div>
+        <div class="hero-socials" aria-label="Social links">
+          <a href="https://github.com/pratikbelkar" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <span class="social-divider"></span>
+          <a href="https://www.linkedin.com/in/pratik-belkar/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-halo halo-one"></div><div class="art-halo halo-two"></div>
+        <div class="art-grid"></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="core-glow"></div>
+        <div class="core-object" data-depth="18">
+          <div class="core-face face-front"><span class="core-glyph">&lt;/&gt;</span><span class="core-caption">CREATE / BUILD / SHIP</span></div>
+          <div class="core-face face-back"></div><div class="core-face face-right"></div><div class="core-face face-left"></div><div class="core-face face-top"></div><div class="core-face face-bottom"></div>
+        </div>
+        <div class="float-card card-ai" data-depth="30"><span class="float-icon ai-icon">✳</span><span><small>01 / INTELLIGENCE</small><strong>AI specialist</strong></span><span class="card-arrow">↗</span></div>
+        <div class="float-card card-flutter" data-depth="-22"><span class="float-icon flutter-icon">◈</span><span><small>02 / MOBILE</small><strong>Flutter apps</strong></span><span class="card-arrow">↗</span></div>
+        <div class="float-card card-web" data-depth="14"><span class="float-icon web-icon">{ }</span><span><small>03 / DIGITAL</small><strong>Web experiences</strong></span><span class="card-arrow">↗</span></div>
+        <div class="art-label art-label-top">BUILD IN PROGRESS <span>●</span></div>
+        <div class="art-label art-label-bottom">PERSPECTIVE / 001</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+    </section>
 
-  <section
-    class="mt-16 border-t-2 sm:px-0 px-4 font-heading border-b-2 justify-center items-center border-white flex flex-col md:gap-4  relative z-[900]">
-    <div
-      class="flex justify-center font-heading font-bold text-3xl h-14 text-white items-center mt-8 mb-4 text-animate">
-      Work
+    <div class="ticker" aria-label="Areas of focus"><div class="ticker-track" aria-hidden="true"><span>AI DEVELOPMENT</span><i>✳</i><span>FLUTTER APPS</span><i>✳</i><span>MERN STACK</span><i>✳</i><span>PYTHON + DATA</span><i>✳</i><span>AI DEVELOPMENT</span><i>✳</i><span>FLUTTER APPS</span><i>✳</i><span>MERN STACK</span><i>✳</i><span>PYTHON + DATA</span><i>✳</i></div></div>
 
-    </div>
-    <div class=" font-heading font-bold text-3xl h-16 text-white mt-2 sm:mt-8 mb-2 sm:mb-8 text-animate">
-      <h3 class="font-main sm:mb-12 mb-2 text-2xl lg:text-5xl xl:text-6xl text-font-pr text-animate">
-        Let's dive in
-      </h3>
-    </div>
-    <div class="career-row flex flex-wrap font-bold text-white gap-2 sm:gap-8 w-full max-w-[1100px] mx-auto h-auto">
-      <!--chat app-->
-      <div
-        class="flex flex-col items-center border-2 rounded-xl p-4 backdrop-blur-[5px] border-[rgb(63,57,87)] bg-[rgb(34,34,38)]/80 w-full max-w-md mx-auto mb-8">
-        <img src="assets/chatapp.jpg" class="w-full h-64 object-contain rounded-md mb-4" alt="To-Do App" />
-        <div class="w-full text-center">
-          <div class="flex justify-center gap-8">
-            <a href="https://github.com/pratikbelkar/chat_app/"
-              class="text-2xl font-bold underline decoration-purple-700 text-animate" target="_blank">
-              Realtime chatapp
-            </a>
-            <a href="https://github.com/pratikbelkar/chat_app/" target="_blank">
-              <i class="fa-solid fa-arrow-up-right-from-square  mt-2"></i>
-            </a>
+    <section class="about section shell" id="about" aria-labelledby="about-title">
+      <div class="section-kicker reveal"><span>01 / ABOUT ME</span><span class="kicker-rule"></span></div>
+      <div class="about-layout">
+        <h2 id="about-title" class="display-title reveal">From first sketch<br><span>to release.</span></h2>
+        <div class="about-text reveal"><p>I like the work between a promising idea and an app people can rely on: shaping the interface, untangling the data flow, and fixing the small things that make a big difference.</p><p>At PuneLok, Antcreatives, and Codeaamy, I've built Flutter screens, connected Firebase and REST APIs, worked through bugs, and supported releases with design and QA teams.</p><a class="text-link" href="#experience">See where I've worked <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="about-stats reveal"><div><strong>1.5</strong><span>YEARS WITH FLUTTER</span></div><div><strong>03</strong><span>TEAMS WORKED WITH</span></div><div><strong>04</strong><span>PROJECTS TO EXPLORE</span></div></div>
+    </section>
+
+    <section class="expertise section" id="expertise" aria-labelledby="expertise-title">
+      <div class="shell">
+        <div class="section-kicker reveal"><span>02 / WHAT I DO</span><span class="kicker-rule"></span></div>
+        <div class="section-heading reveal"><h2 id="expertise-title" class="display-title">Tools I use to <span>get things done.</span></h2><p>I move between mobile, web, data, and AI depending on what the product needs.</p></div>
+        <div class="expertise-grid">
+          <article class="expertise-card reveal" data-tilt><div class="expertise-top"><span class="skill-number">01</span><span class="skill-symbol ai-symbol" aria-hidden="true">✳</span></div><h3>AI specialist</h3><p>I shape AI-assisted workflows, write and refine prompts, and test integrations against the problem they should solve.</p><div class="tags"><span>AI integration</span><span>Prompt design</span><span>Automation</span></div><div class="card-bottom"><span>KEEP IT PRACTICAL</span><span>↗</span></div></article>
+          <article class="expertise-card reveal" data-tilt><div class="expertise-top"><span class="skill-number">02</span><span class="skill-symbol flutter-symbol" aria-hidden="true">◈</span></div><h3>Flutter, from screen to release</h3><p>I build Android and iOS apps with Flutter, using Riverpod, Provider, and Bloc to keep features maintainable as they grow.</p><div class="tags"><span>Flutter</span><span>Dart</span><span>Riverpod</span></div><div class="card-bottom"><span>ANDROID + IOS</span><span>↗</span></div></article>
+          <article class="expertise-card reveal" data-tilt><div class="expertise-top"><span class="skill-number">03</span><span class="skill-symbol web-symbol" aria-hidden="true">{ }</span></div><h3>MERN stack & web apps</h3><p>I connect React interfaces to Node.js and Express APIs, with MongoDB behind the data and responsive layouts on every screen.</p><div class="tags"><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span></div><div class="card-bottom"><span>FRONTEND TO BACKEND</span><span>↗</span></div></article>
+          <article class="expertise-card reveal" data-tilt><div class="expertise-top"><span class="skill-number">04</span><span class="skill-symbol python-symbol" aria-hidden="true">Py</span></div><h3>Python for useful automation</h3><p>I use Python for scripting, data handling, and the repetitive tasks that are better handled by code.</p><div class="tags"><span>Python</span><span>Scripting</span><span>Automation</span></div><div class="card-bottom"><span>MAKE TIME FOR THE HARD PARTS</span><span>↗</span></div></article>
+          <article class="expertise-card reveal" data-tilt><div class="expertise-top"><span class="skill-number">05</span><span class="skill-symbol database-symbol" aria-hidden="true">▤</span></div><h3>Databases & data flow</h3><p>I work with MongoDB, PostgreSQL, and Firebase Firestore to shape data, write queries, and support app features.</p><div class="tags"><span>MongoDB</span><span>PostgreSQL</span><span>Firestore</span></div><div class="card-bottom"><span>KEEP DATA USEFUL</span><span>↗</span></div></article>
+          <article class="expertise-card reveal" data-tilt><div class="expertise-top"><span class="skill-number">06</span><span class="skill-symbol tools-symbol" aria-hidden="true">⌘</span></div><h3>Cursor, Codex & Claude</h3><p>I use these tools to speed up research, prototyping, debugging, and code review, then check the work myself.</p><div class="tags"><span>Cursor</span><span>Codex</span><span>Claude</span></div><div class="card-bottom"><span>FASTER ITERATION</span><span>↗</span></div></article>
+        </div>
+        <div class="toolbox reveal"><span>ALSO WORKING WITH</span><div>Firebase <b>·</b> REST APIs <b>·</b> WebSockets <b>·</b> Provider & Bloc <b>·</b> GitHub CI/CD <b>·</b> Figma</div></div>
+      </div>
+    </section>
+
+    <section class="experience section shell" id="experience" aria-labelledby="experience-title">
+      <div class="section-kicker reveal"><span>03 / EXPERIENCE</span><span class="kicker-rule"></span></div>
+      <div class="section-heading reveal"><h2 id="experience-title" class="display-title">Built with <span>real teams.</span></h2><p>I've learned the most by building with real teams, testing on real devices, and shipping through real constraints.</p></div>
+      <div class="experience-list">
+        <article class="experience-item reveal">
+          <div class="experience-meta"><span class="experience-index">01 / PUNE</span><span class="experience-marker" aria-hidden="true"></span></div>
+          <div class="experience-body"><h3>PuneLok News and Entertainment</h3><p class="experience-role">Flutter Developer</p><p>Built and maintained Android and iOS screens, connected Firebase and REST APIs, and worked through bugs and performance issues before production releases.</p><div class="experience-tags"><span>Flutter</span><span>Firebase</span><span>REST APIs</span><span>Push notifications</span></div></div>
+        </article>
+        <article class="experience-item reveal">
+          <div class="experience-meta"><span class="experience-index">02 / REMOTE</span><span class="experience-marker" aria-hidden="true"></span></div>
+          <div class="experience-body"><h3>Antcreatives</h3><p class="experience-role">Flutter Developer</p><p>Worked on mobile features such as Google Sign-In, local storage, and notifications, collaborating with design and QA on the details that users notice.</p><div class="experience-tags"><span>Google Sign-In</span><span>Hive</span><span>Firebase Auth</span></div></div>
+        </article>
+        <article class="experience-item reveal">
+          <div class="experience-meta"><span class="experience-index">03 / PUNE</span><span class="experience-marker" aria-hidden="true"></span></div>
+          <div class="experience-body"><h3>Codeaamy</h3><p class="experience-role">Flutter Developer Intern</p><p>Built cross-platform app screens and integrated authentication and REST APIs while learning the full cycle from debugging to deployment.</p><div class="experience-tags"><span>Flutter</span><span>Dart</span><span>Authentication</span></div></div>
+        </article>
+      </div>
+      <p class="education-note reveal">Currently pursuing an M.Sc. in Computer Science at MIT Arts, Commerce and Science College, Alandi.</p>
+    </section>
+
+    <section class="work section shell" id="work" aria-labelledby="work-title">
+      <div class="section-kicker reveal"><span>04 / SELECTED PROJECTS</span><span class="kicker-rule"></span></div>
+      <div class="section-heading work-heading reveal"><h2 id="work-title" class="display-title">Projects I can <span>show you.</span></h2><p>Each project gave me a different problem to solve, from live messaging to handling API data cleanly.</p></div>
+      <div class="project-grid">
+        <a class="project-card project-feature reveal" href="https://github.com/pratikbelkar/chat_app/" target="_blank" rel="noopener noreferrer"><div class="project-visual visual-chat"><img src="assets/chatapp.jpg" alt="Screenshot of the real time chat application" loading="lazy"><span class="project-launch" aria-hidden="true">↗</span></div><div class="project-info"><div><span class="project-index">01 / FLUTTER + FIREBASE</span><h3>Realtime Chat App</h3><p>I brought real-time conversations and Firebase integration together in a Flutter chat app.</p></div><span class="project-link">VIEW PROJECT ↗</span></div></a>
+        <a class="project-card reveal" href="https://github.com/pratikbelkar/ecom_app" target="_blank" rel="noopener noreferrer"><div class="project-visual visual-ecom"><img src="assets/ecom.png" alt="Screenshot of the ecommerce mobile app" loading="lazy"><span class="project-launch" aria-hidden="true">↗</span></div><div class="project-info"><div><span class="project-index">02 / MOBILE COMMERCE</span><h3>Ecommerce App</h3><p>I built a Flutter storefront with product browsing, shopping flows, and asynchronous loading.</p></div><span class="project-link">VIEW PROJECT ↗</span></div></a>
+        <a class="project-card reveal" href="https://github.com/pratikbelkar/pokemon_app/" target="_blank" rel="noopener noreferrer"><div class="project-visual visual-pokemon"><img src="assets/POKEMON_APP.png" alt="Screenshot of the Pokémon app" loading="lazy"><span class="project-launch" aria-hidden="true">↗</span></div><div class="project-info"><div><span class="project-index">03 / API EXPLORATION</span><h3>Pokémon App</h3><p>I turned Pokémon API data into a playful app for browsing and discovery.</p></div><span class="project-link">VIEW PROJECT ↗</span></div></a>
+        <a class="project-card reveal" href="https://github.com/pratikbelkar/flutterweatherapp/" target="_blank" rel="noopener noreferrer"><div class="project-visual visual-weather"><img src="assets/weather-2019-02-07.webp" alt="Weather illustration for the Flutter weather app" loading="lazy"><span class="project-launch" aria-hidden="true">↗</span></div><div class="project-info"><div><span class="project-index">04 / FLUTTER + API</span><h3>Weather App</h3><p>I connected a Flutter interface to live weather data and handled the API states behind it.</p></div><span class="project-link">VIEW PROJECT ↗</span></div></a>
+      </div>
+      <a class="all-work reveal" href="https://github.com/pratikbelkar" target="_blank" rel="noopener noreferrer">Explore more on GitHub <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="shell contact-inner">
+        <div class="section-kicker reveal"><span>05 / SAY HELLO</span><span class="kicker-rule"></span></div>
+        <div class="contact-layout">
+          <div class="contact-copy reveal">
+            <p class="contact-overline">HAVE SOMETHING IN MIND?</p>
+            <h2 id="contact-title">Got an idea? <em>Let's talk.</em></h2>
+            <p>Have a role, an app idea, or a bug that needs a fresh pair of eyes? Tell me about it. Your message opens in WhatsApp, ready to send.</p>
+            <div class="contact-methods">
+              <a href="https://wa.me/919307923973" target="_blank" rel="noopener noreferrer"><span class="method-icon" aria-hidden="true">✦</span><span><small>WHATSAPP</small><strong>Chat with me</strong></span><span aria-hidden="true">↗</span></a>
+              <a href="mailto:belkarpratik2002@gmail.com"><span class="method-icon" aria-hidden="true">@</span><span><small>EMAIL</small><strong>belkarpratik2002@gmail.com</strong></span><span aria-hidden="true">↗</span></a>
+              <a href="tel:+919307923973"><span class="method-icon" aria-hidden="true">⌁</span><span><small>PHONE</small><strong>+91 93079 23973</strong></span><span aria-hidden="true">↗</span></a>
+            </div>
           </div>
-          <div class="desc opacity-80 whitespace-pre-line text-base font-inter mt-2 text-animate">
-            created while Learning Firebase integration
-          </div>
-          <ul class="used-stack flex opacity-80 gap-3 mt-3 justify-center">
-            <li class=" border bg-[rgb(25,25,28)] border-[rgb(63,57,87)] w-[90px] rounded-sm">STORAGE</li>
-            <li class=" border bg-[rgb(25,25,28)] border-[rgb(63,57,87)] w-[90px] rounded-sm">Cloud</li>
-            <li class=" border bg-[rgb(25,25,28)] border-[rgb(63,57,87)] w-[140px] rounded-sm">SESSION</li>
-          </ul>
+          <form class="contact-form reveal" id="whatsapp-form" aria-label="Send a WhatsApp message">
+            <div class="form-topline"><span>START A CONVERSATION</span><span>↗</span></div>
+            <h3>What are you working on?</h3>
+            <p>Give me the short version. I'll take it from there.</p>
+            <div class="field-row">
+              <label for="contact-name">Your name <span>*</span><input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your name" required maxlength="80"></label>
+              <label for="contact-email">Your email<input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="120"></label>
+            </div>
+            <label for="contact-message">Your message <span>*</span><textarea id="contact-message" name="message" rows="5" placeholder="The idea, the challenge, or what you need help with..." required maxlength="1000"></textarea></label>
+            <button class="contact-button" type="submit">Continue in WhatsApp <span aria-hidden="true">↗</span></button>
+            <p class="form-note">WhatsApp opens with your message filled in. You choose when to send it.</p>
+            <noscript><p><a href="https://wa.me/919307923973">Open WhatsApp directly</a></p></noscript>
+          </form>
         </div>
       </div>
-      <!-- Pokemon App -->
-      <div
-        class="flex flex-col items-center border-2 rounded-xl p-4 backdrop-blur-[5px] border-[rgb(63,57,87)] bg-[rgb(34,34,38)]/80 w-full max-w-md mx-auto mb-8">
-        <img src="assets/POKEMON_APP.png" class="w-full h-64 object-contain rounded-md mb-4" alt="Pokemon App" />
-        <div class="w-full text-center ">
-          <div class="flex gap-8 justify-center">
-            <a href="https://github.com/pratikbelkar/pokemon_app/"
-              class="text-2xl font-bold underline decoration-purple-700 text-animate" target="_blank">
-              Pokémon App project
-            </a>
-            <a href="https://github.com/pratikbelkar/pokemon_app/" target="_blank">
-              <i class="fa-solid fa-arrow-up-right-from-square mt-2"></i>
-            </a>
-          </div>
-          <div class="desc opacity-80 whitespace-pre-line text-base font-inter mt-2 text-animate">
-            Built While Learning API
-          </div>
-          <ul class="used-stack flex opacity-80 gap-3 mt-2.5 justify-center">
-            <li class=" border bg-[rgb(25,25,28)] border-[rgb(63,57,87)] w-[90px] rounded-sm">FETCH</li>
-            <li class=" border bg-[rgb(25,25,28)] border-[rgb(63,57,87)] w-[90px] rounded-sm">Animations </li>
-            <li class=" border bg-[rgb(25,25,28)] border-[rgb(63,57,87)] w-[140px] rounded-sm">API</li>
-          </ul>
-        </div>
-      </div>
-      <!-- Ecommerce app -->
-      <div
-        class="flex flex-col items-center border-2 rounded-xl p-4 backdrop-blur-[5px] border-[rgb(63,57,87)] bg-[rgb(34,34,38)]/80 w-full max-w-md mx-auto mb-8">
-        <img src="assets/ecom.png" class="w-full h-64 object-contain rounded-md mb-4" alt="Infinite Scroll" />
-        <div class="w-full text-center">
-          <div class="flex justify-center gap-8">
-            <a href="https://github.com/pratikbelkar/ecom_app"
-              class="text-2xl font-bold underline decoration-purple-700 text-animate" target="_blank">
-              Ecommerce app
-            </a>
-            <a href="https://github.com/pratikbelkar/ecom_app" target="_blank">
-              <i class="fa-solid fa-arrow-up-right-from-square mt-2"></i>
-            </a>
-          </div>
-          <div class="desc opacity-80 whitespace-pre-line text-base font-inter mt-2 text-animate">
-            purchase products online using app
-          </div>
-          <ul class="used-stack flex opacity-80 gap-3 mt-2.5 justify-center">
-            <li class=" border bg-[rgb(25,25,28)] border-[rgb(63,57,87)] w-[90px] rounded-sm">API</li>
-            <li class=" border bg-[rgb(25,25,28)] border-[rgb(63,57,87)] w-[90px] rounded-sm">ASYNC</li>
-            <li class=" border bg-[rgb(25,25,28)] border-[rgb(63,57,87)] w-[140px] rounded-sm">LAZY_LOADING</li>
-          </ul>
-        </div>
-      </div>
-      <!-- weather app -->
-      <div
-        class="flex flex-col items-center  border-2 rounded-xl p-4 backdrop-blur-[5px] border-[rgb(63,57,87)] bg-[rgb(34,34,38)]/80  w-full max-w-md mx-auto mb-8">
-        <img src="assets/weather-2019-02-07.webp" class="h-64 w-full  object-contain rounded-md mb-8"
-          alt="Emoji Project" />
-        <div class="w-full text-center">
-          <div class="flex justify-center gap-8">
-            <a href="https://github.com/pratikbelkar/flutterweatherapp/"
-              class="text-2xl font-bold underline decoration-purple-700 text-animate" target="_blank">
-              Weather app
-            </a>
-            <a href="https://github.com/pratikbelkar/flutterweatherapp/" target="_blank">
-              <i class="fa-solid fa-arrow-up-right-from-square mt-2"></i>
-            </a>
-          </div>
-          <div class="desc opacity-80 whitespace-pre-line text-base  mt-1 text-animate font-heading">
-            Built While Learning apis handling
-          </div>
-          <ul class="used-stack flex opacity-80 gap-3 mt-3 justify-center">
-            <li class=" border bg-[rgb(25,25,28)] border-[rgb(63,57,87)] w-[90px] rounded-sm">live weather </li>
-            <li class=" border bg-[rgb(25,25,28)] border-[rgb(63,57,87)] w-[90px] rounded-sm">FETCH</li>
-            <li class=" border bg-[rgb(25,25,28)] border-[rgb(63,57,87)] w-[140px] rounded-sm">LEARNINGS</li>
-          </ul>
-        </div>
-      </div>
+    </section>
+  </main>
 
-
-
-    </div>
-  </section>
-
-  <section class="Skills px-4 sm:px-0 font-heading  min-h-screen text-white relative z-[900]">
-    <div
-      class="flex opacity-60 justify-center font-heading font-bold text-3xl h-16 text-white items-center mt-8 mb-8 text-animate">
-      Skills
-    </div>
-    <div class="main mt-8 flex flex-wrap justify-center w-full gap-8">
-      <div
-        class="component backdrop-blur-[5px] h-[320px] w-[560px] font-heading border border-[rgb(63,57,87)] bg-[rgb(34,34,38)]/80 text-white p-6 rounded-xl shadow-lg">
-        <h1 class="font-heading text-white mb-4 text-xl font-semibold text-animate">Backend</h1>
-        Backend
-        I love problem-solving and building complex systems.
-        I strive to create scalable, reliable, and secure solutions.
-        <div class="flex flex-wrap gap-4 mt-6">
-          <img src="assets/skills/Node.js.png" class="w-8 h-8">
-
-          <img src="assets/skills/JavaScript.png" class="w-8 h-8">
-          <img src="assets/skills/MongoDB.png" class="w-8 h-8">
-          <img src="assets/skills/PostgresSQL.png" class="w-8 h-8">
-
-
-          <img src="assets/skills/firebase.png" class="w-8 h-8">
-          <img src="assets/skills/dart.png" class="w-8 h-8">
-
-
-          <img src="assets/skills/Git.png" class="w-8 h-8">
-          <img src="assets/skills/GitHub.png" class="w-8 h-8">
-        </div>
-      </div>
-      <div
-        class="component backdrop-blur-[5px] h-[320px] w-[550px] mt-10 font-heading border relative z-10 border-[rgb(63,57,87)] bg-[rgb(34,34,38)]/80 text-white p-6 rounded-xl shadow-lg">
-        <h1 class="font-heading text-white mb-4 text-xl font-semibold text-animate">Frontend & Design</h1>
-        I'm passionate about design, animation, and interactions, always aiming to build fun websites with great user
-        experiences.
-        <div class="flex flex-wrap gap-3 mt-6 items-center">
-          <img src="assets/skills/HTML5.png" class="w-8 h-8">
-
-
-          <img src="assets/skills/Figma (1).png" class="w-8 h-8">
-
-          <img src="assets/skills/Bootstrap (1).png" class="w-8 h-8">
-          <img src="assets/skills/flutter.png" class="w-8 h-8">
-
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section
-    class="relative z-10  w-full h-[130px] sm:min-h-[140px] mt-0 sm:mt-12 bg-[rgb(25,25,28)] border-t-2 border-t-white">
-    <div class="contact-info flex justify-center items-center mt-7 sm:mt-6 mb-4 gap-2 sm:gap-2">
-      <a href="https://www.linkedin.com/in/pratik-belkar/" target="_blank">
-        <svg class="fill-current hover:text-[rgb(68,185,248)] text-[rgb(187,229,252)] h-10 w-10 rounded-lg"
-          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-          <path
-            d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z" />
-        </svg>
-      </a>
-      <a href="https://github.com/pratikbelkar" target="_blank">
-        <svg class="fill-current h-10 w-10 rounded-lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-          <path
-            d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z" />
-        </svg>
-      </a>
-
-      <a href="mailto:belkarpratik428@gmail.com" target="_blank">
-
-        <svg class="fill-current hover:text-[rgb(247,149,44)] text-[rgb(252,187,116)] h-10 w-10 rounded-lg"
-          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-          <path
-            d="M125.4 128C91.5 128 64 155.5 64 189.4C64 190.3 64 191.1 64.1 192L64 192L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 192L575.9 192C575.9 191.1 576 190.3 576 189.4C576 155.5 548.5 128 514.6 128L125.4 128zM528 256.3L528 448C528 456.8 520.8 464 512 464L128 464C119.2 464 112 456.8 112 448L112 256.3L266.8 373.7C298.2 397.6 341.7 397.6 373.2 373.7L528 256.3zM112 189.4C112 182 118 176 125.4 176L514.6 176C522 176 528 182 528 189.4C528 193.6 526 197.6 522.7 200.1L344.2 335.5C329.9 346.3 310.1 346.3 295.8 335.5L117.3 200.1C114 197.6 112 193.6 112 189.4z" />
-        </svg>
-      </a>
-      <a href="assets/resume/pratik_flutter_resume.pdf" download>
-        <svg class="fill-current hover:text-[rgb(239,97,114)] text-[rgb(252,164,174)] h-10 w-10 rounded-lg"
-          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-          <path
-            d="M192 112L304 112L304 200C304 239.8 336.2 272 376 272L464 272L464 512C464 520.8 456.8 528 448 528L192 528C183.2 528 176 520.8 176 512L176 128C176 119.2 183.2 112 192 112zM352 131.9L444.1 224L376 224C362.7 224 352 213.3 352 200L352 131.9zM192 64C156.7 64 128 92.7 128 128L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 250.5C512 233.5 505.3 217.2 493.3 205.2L370.7 82.7C358.7 70.7 342.5 64 325.5 64L192 64zM248 320C234.7 320 224 330.7 224 344C224 357.3 234.7 368 248 368L392 368C405.3 368 416 357.3 416 344C416 330.7 405.3 320 392 320L248 320zM248 416C234.7 416 224 426.7 224 440C224 453.3 234.7 464 248 464L392 464C405.3 464 416 453.3 416 440C416 426.7 405.3 416 392 416L248 416z" />
-        </svg>
-      </a>
-    </div>
-    <div class="mb-2 flex justify-center items-center font-heading text-md text-white font-bold  sm:text-2xl">
-      Crafted with ❤️‍🔥 by Pratik Belkar
-    </div>
-  </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/smooth-scrollbar@8.7.4/dist/smooth-scrollbar.js"></script>
-  <script src="script.js"></script>
+  <footer class="footer shell"><a class="footer-brand" href="#top">P<span>.</span></a><p>© <span id="year">2026</span> Pratik Belkar. Built in Pune.</p><div><a href="mailto:belkarpratik2002@gmail.com">Email ↗</a><a href="https://wa.me/919307923973" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a><a href="https://github.com/pratikbelkar" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/pratik-belkar/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="#top">Back to top ↑</a></div></footer>
 </body>
-
 </html>
